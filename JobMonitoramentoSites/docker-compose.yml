@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  job-monitoramento-sites:
+    image: job-monitor-sites-3-0
+    build:
+      context: .
+    environment:
+      - BaseMonitoramento=DefaultEndpointsProtocol=https;AccountName=storagemonitorgroffe;AccountKey=9AhwU++9tyDpveL2CCPymnVVczpAG12Ga+plfI8n991JQYP8xf4KkppX3jEzlFCo7kEcK0BZbOl2zLEUmrWcsw==;EndpointSuffix=core.windows.net
